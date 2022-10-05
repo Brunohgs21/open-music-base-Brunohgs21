@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Open Music</title>
-  </head>
-  <body>
-    <main></main>
-    <script src="../../scripts/theme.js"></script>
-    <script src="./productsData.js"></script>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/globalStyles.css" />
+  <link rel="stylesheet" href="../../styles/positioning.css">
+  <link rel="stylesheet" href="index.css" />
+  <title>Open Music</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="open-music">open music</h1><button id="dark-mode"><img id="dm-icon" src="../../assets/img/moon.png" alt=""></button>
+    </nav>
+  </header>
+  <main>
+    <section class="choice">
+      <p class="text-gender">Gênero Musical</p>
+      <ul class="filter-list">
+        <li class="filter">Todos</li>
+        <li class="filter">Pop</li>
+        <li class="filter">MPB</li>
+        <li class="filter">Forró</li>
+        <li class="filter">Samba</li>
+        <li class="filter">Baião</li>
+        <li class="filter">Rap</li>
+        <li class="filter">Hip-Hop</li>
+        <li class="filter">Rock</li>
+        <li class="filter">Reggae</li>
+        <li class="filter">Country</li>
+        <li class="filter">Gospel</li>
+      </ul>
+    </section>
+    <section class="price gap1">
+      <p class="flex between"><span class="define">Definir preço</span><span class="counter">Até R$<span id="contador">120</span>.00</span></p>
+      <input class='slider' type="range" max="240">
+    </section>
+    <section class="vitrine">
+      <p class="title-albuns">Albuns Encontrados</p>
+      <ul class="list-music">
+        <!-- <li class="music-card">
+          <figure>
+            <img src="../../assets/img/1.jpg" alt="">
+          </figure>
+          <div class="info">
+            <p><span>Banda</span><span>Ano</span></p>
+            <p>Título</p>
+            <p><span>Preço</span><span><button>Comprar</button></span></p>
+          </div>
+        </li> -->
+      </ul>
+
+    </section>
+
+  </main>
+  <script src="../home/productsData.js"></script>
+  <script src="../../scripts/theme.js"></script>
+  <script src="../../scripts/filter.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
