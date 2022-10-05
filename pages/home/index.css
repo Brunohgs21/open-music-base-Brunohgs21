@@ -73,7 +73,7 @@ header nav {
 .filter:hover {
     background-color: var(--color-grey-7);
     border-radius: 4px;
-    color: var(--color-grey-6);
+    color: var(--color-grey-4);
     border: 1px solid var(--color-grey-0);
 
 }
@@ -132,6 +132,7 @@ header nav {
 .pPreco {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
