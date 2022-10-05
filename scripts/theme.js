@@ -17,9 +17,9 @@ function darkMode() {
         }
 
         if (dmIcon.classList.contains('text-white')) {
-            dmIcon.src = '../../assets/img/sun.png'
+            dmIcon.src = './assets/img/sun.png'
         } else {
-            dmIcon.src = '../../assets/img/moon.png'
+            dmIcon.src = './assets/img/moon.png'
         }
     })
 
