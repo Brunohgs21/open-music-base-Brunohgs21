@@ -4,12 +4,16 @@ function darkMode() {
     const dmIcon = document.querySelector('#dm-icon')
     const html = document.querySelector('html')
 
+    
+    
+
     dmButton.addEventListener('click', () => {
         html.classList.toggle('dark-mode')
         dmIcon.classList.toggle('text-white')
 
         const dmPref = localStorage.getItem('darkmode')
 
+    
         if (!dmPref) {
             localStorage.setItem('darkmode', true)
         }else{
@@ -26,3 +30,19 @@ function darkMode() {
 
 }
 darkMode()
+
+
+function verificaDarkMode(){
+    const html = document.querySelector('html')
+   
+
+    const verifica = localStorage.getItem('darkmode')
+   
+    if(verifica) {
+        html.classList.add('dark-mode')
+    
+
+    }
+
+}
+verificaDarkMode()
